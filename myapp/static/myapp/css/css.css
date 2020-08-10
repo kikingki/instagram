@@ -1,0 +1,30 @@
+@font-face { 
+    font-family: 'BMEULJIRO'; 
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/BMEULJIRO.woff') 
+    format('woff'); 
+    font-weight: normal; 
+    font-style: normal; }
+
+nav .navbar-brand {
+    font-family: 'BMEULJIRO';
+    margin: 0px 200px;
+}
+nav {
+    border-bottom: 1px solid #D2D2D2;
+}
+body{
+    background-color: white;
+}
+img {
+    margin: 0px 5px;
+}
+.card {
+    background-color: #efefef;
+    display: grid;
+    width: 1000px;
+    margin: 30px 25%;
+}
+.card .card-img-top {
+    width: 99%;
+    margin-top: 5px;
+}
