@@ -1,0 +1,19 @@
+{% extends 'myapp/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="c_login">
+    <div class="login_item1">
+        <img src="{% static 'myapp/img/로그인사진.png'%}" width="450" height="650" alt="" class="l_img"></div>
+    <div class="login_item2">
+    <form method="POST" action="/signin/">
+        <h1 class="logo">Instagram</h1>
+        {% csrf_token %}
+        {{ signin_form.as_p }}
+        <input type="submit" value="로그인" class="btn btn-primary">
+        <hr>
+        계정이 없으신가요?<a href="{% url 'signup' %}">가입하기</a>
+    </form>
+    </div>
+</div>
+{% endblock %}

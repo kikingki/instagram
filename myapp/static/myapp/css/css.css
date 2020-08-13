@@ -5,6 +5,14 @@
     font-weight: normal; 
     font-style: normal; }
 
+@font-face {
+    font-family: 'InfinitySans-RegularA1';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/InfinitySans-RegularA1.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+                
+
 nav .navbar-brand {
     font-family: 'BMEULJIRO';
     margin: 0px 200px;
@@ -12,19 +20,160 @@ nav .navbar-brand {
 nav {
     border-bottom: 1px solid #D2D2D2;
 }
-body{
-    background-color: white;
+
+footer {
+    height: 40px;
+    padding: 25px 0px 50px 450px;
 }
+
+footer p {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+}
+footer .b_footer {
+    margin-right: 10px;
+}
+footer #g_footer {
+    color: #A4A4A4;
+    margin-left: 370px;
+}
+
 img {
     margin: 0px 5px;
 }
+
+.card-header{
+    display: inline-block;
+}
+.card-header h5{
+    display: inline-block;
+    font-weight: bold;
+    font-size: 25px;
+}
+.card-header p{
+    font-size: 13px;
+}
+
 .card {
-    background-color: #efefef;
-    display: grid;
     width: 1000px;
-    margin: 30px 25%;
+    margin: 30px 23%;
+    font-family: 'NanumSquare', sans-serif !important;
 }
 .card .card-img-top {
     width: 99%;
     margin-top: 5px;
+}
+
+
+.row.row-cols-1.row-cols-md-3 {
+    width: 1350px;
+    margin-left: 250px;
+}
+.row.row-cols-1.row-cols-md-3 .col.mb-4 {
+    height: 470px;
+}
+.row.row-cols-1.row-cols-md-3 .card.h-100 .card-img-top {
+    width:380px;
+    height: 380px;
+    margin: 10px 10px 0px 10px;
+}
+.row.row-cols-1.row-cols-md-3 .card.h-100 {
+    width: 400px;
+}
+.li a {
+    font-weight: bold;
+    margin: 0px 45%;
+    color: black;
+}
+
+.li a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.li2 a {
+    color: #9A9A9A;
+}
+
+.li2 a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.c_login {
+    display: grid;
+    grid-template-columns: 450px 450px;
+    grid-template-rows: 650px 650px;
+    grid-gap: 0px 3px;
+    margin: 100px 0px 0px 450px ;
+    height: 720px;
+}
+
+.c_login .login_item2 {
+    border: 1px solid #D2D2D2;
+    padding: 100px;
+}
+
+.c_login .btn.btn-primary {
+    width: 250px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.c_login .login_item2 .logo {
+    font-family: 'BMEULJIRO';
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.c_login .login_item2 #g_signup {
+    text-align: center;
+    font-weight: bold;
+    color: #A4A4A4;
+    margin-bottom: 40px;
+}
+
+.c_header {
+    display: grid;
+    width: 400px;
+    margin: 50px 35%;
+    font-family: 'NanumSquare', sans-serif !important;
+}
+
+.bi.bi-person-circle {
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+.c_header h2 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    font-weight: bold;
+}
+.c_header h4 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+
+}
+
+#m_post {
+    margin-left: 980px;
+    font-family: 'InfinitySans-RegularA1';
+    font-size: 18px;
+}
+
+.w_container {
+    font-family: 'InfinitySans-RegularA1';
+    margin: 50px 0px 10px 750px;
+    border: 1px solid #D2D2D2;
+    width: 500px;
+    height: 650px;
+    padding: 20px 20px;
+}
+
+.h_header {
+    display: grid;
+    width: 400px;
+    margin: 50px 950px;
+    font-family: 'NanumSquare', sans-serif !important;
 }

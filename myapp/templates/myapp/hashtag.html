@@ -1,0 +1,24 @@
+{% extends 'myapp/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="h_header">
+<h1>#{{ hashtag.name }}</h1>
+</div>
+<hr>
+<p id='m_post'>인기 게시물</p>
+<div class="row row-cols-1 row-cols-md-3">
+{% for post in hashtag.post_set.all %}
+    <div class="col mb-4">
+        <div class="card h-100">
+            {% if post.image %}
+            <img src="{{ post.image.url }}" class="card-img-top" alt="">
+            {% endif %}
+            <div class="card-body">
+                <p class="card-text">{{post.body}}</p>
+            </div>
+        </div>
+    </div>
+{% endfor %}
+</div>
+{% endblock %}

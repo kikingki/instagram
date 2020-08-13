@@ -1,11 +1,16 @@
 {% extends 'myapp/base.html' %}
 {% load static %}
 {% block content %}
-<form method="POST" enctype="multipart/form-data">
-    {% csrf_token %}
-    <table>
-        {{form.as_table}}
-    </table>
-    <input type="submit" value="공유">
-</form>
+<div class="w_container">
+    <p>나의 사진과 동영상을 공유해보세요.</p>
+    <hr>
+    <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        <table>
+            {{form.as_table}}
+        </table>
+        <br>
+        <input type="submit" value="공유" class="btn btn-primary btn-lg btn-block">
+    </form>
+</div>
 {% endblock %}
